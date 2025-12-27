@@ -1,5 +1,6 @@
 
 import React, { useState, useRef, useMemo } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { 
   Camera, 
   Upload, 
@@ -133,6 +134,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#050505] flex flex-col md:flex-row text-white font-sans">
+      <Analytics />
       {/* Sidebar */}
       <aside className="w-full md:w-[420px] bg-[#111111] border-r border-white/5 p-6 overflow-y-auto max-h-screen custom-scrollbar flex flex-col gap-8 shadow-2xl">
         <header className="flex items-center gap-4">
